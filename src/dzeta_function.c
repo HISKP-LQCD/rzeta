@@ -224,16 +224,16 @@ double dplm( unsigned int l, int m, double x) {
     } else if (mabs == 1) {
       xx = x*x;
       p = -2.5 * x * (7. * xx - 3.) * sqrt(1. - xx);
-    }
     } else if (mabs == 2) {
       xx = x*x;
       p = 7.5 * (7. * xx - 1.) * (1. - xx);
     } else if (mabs == 3) {
       xx = 1. - x*x;
       p = -105. * x*  xx * sqrt(xx);
-    } else if (mabs == 3) {
+    } else if (mabs == 4) {
       xx = 1. - x*x;
       p = 105. * xx * xx;
+    }
   }
   return(p * norm);
 }
